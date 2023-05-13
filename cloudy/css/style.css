@@ -45,12 +45,12 @@ body a{
   margin: 10px;
   font-size: 0.85em;
 }
-.h_menu4{
-	background:#ff8261;
+.h_menu4 {
+	background: #555;
 }
 .toggleMenu {
-    display: none;
-	background:#ff8261;
+	display: none;
+	background:#555;
 	width: 100%;
 	color: #FFF;
 	font-size: 1.5em;
@@ -208,14 +208,14 @@ ul.nav li.active a, .nav li a:hover {
 		width:100%;
 	}
 }
-.banner{
-	background:url(../images/banner.jpg)no-repeat;
+.banner {
+	background: url(../images/ss3.jpg)no-repeat;
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-	min-height:620px;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	min-height: 620px;
 }
 .banner_desc{
 	text-align:center;
@@ -334,7 +334,7 @@ span.m_1{
 	line-height: 1.5em;
 }
 .one-fifth input[type="submit"] {
-  background: #ff8261;
+  background: #555;
   display: inline-block;
   color: #FFF;
   text-transform: uppercase;
@@ -368,7 +368,7 @@ ul.service_grid {
 i.s1 {
   width: 75px;
   height: 65px;
-  background: url(../images/img_sprite.png) no-repeat -5px -3px;
+  background: url(../images/img_sprite1.png) no-repeat -5px -3px;
   float: left;
   margin:0 1em 0 0;
 }
@@ -389,35 +389,35 @@ ul.service_grid li.desc p{
 i.s2{
   width: 75px;
   height: 65px;
-  background: url(../images/img_sprite.png) no-repeat -84px -3px;
+  background: url(../images/img_sprite1.png) no-repeat -84px -3px;
   float: left;
   margin:0 1em 0 0;
 }
 i.s3{
   width: 75px;
   height: 65px;
-  background: url(../images/img_sprite.png) no-repeat -166px -3px;
+  background: url(../images/img_sprite1.png) no-repeat -166px -3px;
   float: left;
   margin:0 1em 0 0;
 }
 i.s4{
   width: 75px;
   height: 65px;
-  background: url(../images/img_sprite.png) no-repeat -249px -3px;
+  background: url(../images/img_sprite1.png) no-repeat -249px -3px;
   float: left;
   margin:0 1em 0 0;
 }
 i.s5{
   width: 75px;
   height: 65px;
-  background: url(../images/img_sprite.png) no-repeat -334px -3px;
+  background: url(../images/img_sprite1.png) no-repeat -334px -3px;
   float: left;
   margin:0 1em 0 0;
 }
 i.s6{
   width: 75px;
   height: 65px;
-  background: url(../images/img_sprite.png) no-repeat -411px -5px;
+  background: url(../images/img_sprite1.png) no-repeat -411px -5px;
   float: left;
   margin:0 1em 0 0;
 }
@@ -463,7 +463,7 @@ ul.offer li.last{
 	margin-right:0;
 }
 p.m_3{
-  color: #ff8261;
+  color: #555;
   font-weight: 800;
   font-size: 3em;
   text-transform: uppercase;
@@ -523,7 +523,7 @@ span.m_7{
 	margin-left:10px;
 }
 .but1{
-  background: #ff8261;
+  background: #555;
   display: inline-block;
   color: #FFF;
   text-transform: uppercase;
@@ -599,7 +599,7 @@ span.m_7{
 	border-color:#DBD334;
 }
 .pricing-table-grid:hover li span{
-	background:#ff8261;
+	background:#555;
 	color:#FFF;
 }
 .pricing-table-grid ul li span{
@@ -622,7 +622,7 @@ a.order-btn{
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  background: #ff8261;
+  background: #555;
   font-size: 13px;
   font-weight: 600;
   width: 55%;
@@ -744,13 +744,13 @@ ul.footer_social li a i:hover{
 }
 /*--about--*/
 .about {
-  background: url(../images/banner.jpg)no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  min-height:300px;
+	background: url(../images/ss3.jpg)no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	min-height: 300px;
 }
 .about h1{
   color: #fff;
