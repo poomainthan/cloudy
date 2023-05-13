@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\cloudy\\images"
+    "\\cloudy",
+    "\\cloudy\\css"
   ],
+  "SelectedNode": "\\cloudy\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }
