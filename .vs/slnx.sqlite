@@ -1,609 +1,0 @@
-SQLite format 3   @     {                                                               { .[3   û    û¨K
-	‹ÛQ‘ùRJ                                                                                                                                                                                                                                                                                                                                                                                                                                                                       $W-QindexSymbolDefinition_DefiningFileId_IndexSymbolDefinitionCREATE INDEX [SymbolDefinition_DefiningFileId_Index]
-    ON [SymbolDefinition] ([DefiningFileId])
-C-GindexSymbolDefinition_Name_IndexSymbolDefinitionCREATE INDEX [SymbolDefinition_Name_Index]
-    ON [SymbolDefinition] ([Name] COLLATE NOCASE)…=--Š-tableSymbolDefinitionSymbolDefinition
-CREATE TABLE [SymbolDefinition]
-(
-    [SymbolDefinitionId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    [ProviderId] INTEGER NOT NULL
-        REFERENCES [ProviderEntity]([ProviderId])
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [Name] NVARCHAR(255) NOT NULL COLLATE NOCASE,
-    [FullyQualifiedName] NVARCHAR(255) COLLATE NOCASE,
-    [Kind] INTEGER NOT NULL,
-    [Accessibility] INTEGER NOT NULL,
-    [DefiningFileId] INTEGER NOT NULL
-        REFERENCES [FileSystemEntity]([FileSystemEntityId]) 
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [LocationRow] INTEGER NOT NULL,
-    [LocationColumn] INTEGER NOT NULL
-)/_-_indexFileScannerCache_FileSystemEntityId_IndexFileScannerCacheCREATE INDEX [FileScannerCache_FileSystemEntityId_Index]
-    ON [FileScannerCache]([FileSystemEntityId])ƒU
---†]tableFileScannerCacheFileScannerCacheCREATE TABLE [FileScannerCache]
-(
-    [FileScannerCacheId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
-    [FileSystemEntityId] INTEGER NOT NULL REFERENCES [FileSystemEntity]([FileSystemEntityId])
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [ProviderId] INTEGER NOT NULL REFERENCES [ProviderEntity]([ProviderId])
-        ON DELETE CASCADE,
-    [Type] INTEGER NOT NULL,
-    [Timestamp] DATETIME NULL
-)-	/)‚indexProviderType_TypeProviderEntity
-CREATE UNIQUE INDEX [ProviderType_Type]
-    ON [ProviderEntity] ([ProviderType] COLLATE NOCASE,[ProviderVersion] COLLATE NOCASE)‚ ))ƒ;tableProviderEntityProviderEntity	CREATE TABLE [ProviderEntity]
-(
-    [ProviderId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    [ProviderType] NVARCHAR(20) NOT NULL COLLATE NOCASE,
-    [ProviderVersion] NVARCHAR(20) NOT NULL COLLATE NOCASE
-):E-‚indexFileSystemEntity_Parent_NameFileSystemEntityCREATE UNIQUE INDEX [FileSystemEntity_Parent_Name]
-    ON [FileSystemEntity] ([Name] COLLATE NOCASE, [ParentFileSystemEntityId])Bk-yindexFileSystemEntity_ParentFileSystemEntityId_IndexFileSystemEntityCREATE INDEX [FileSystemEntity_ParentFileSystemEntityId_Index]
-    ON [FileSystemEntity] ([ParentFileSystemEntityId])C-GindexFileSystemEntity_Name_IndexFileSystemEntityCREATE INDEX [FileSystemEntity_Name_Index]
-    ON [FileSystemEntity] ([Name] COLLATE NOCASE)ƒH--†CtableFileSystemEntityFileSystemEntityCREATE TABLE [FileSystemEntity]
-(
-    [FileSystemEntityId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    [Name] NVARCHAR(255) NOT NULL COLLATE NOCASE,
-    [ParentFileSystemEntityId] INTEGER NULL
-        REFERENCES [FileSystemEntity]([FileSystemEntityId])
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [IsFile] BIT NOT NULL,
-    [LastObserved] DATETIME NOT NULL DEFAULT current_timestamp
-)o1indexSetting_Name_IndexSettingCREATE INDEX [Setting_Name_Index]
-  ON [Setting] ([Name] COLLATE NOCASE)P++Ytablesqlite_sequencesqlite_sequenceCREATE TABLE sqlite_sequence(name,seq)G‚etableSettingSettingCREATE TABLE [Setting]
-(
-    [SettingId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    [Name] NVARCHAR(255) NOT NULL COLLATE NOCASE,
-    [Value] NVARCHAR(255) NU   
-
-   
-ı èĞÔ±&
-ı                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ' -3CreatedOrUpdated05-15-2023 09:50:46 C]ProjectConfigurationService{
-  "ProjectBuildConfigurations": [],
-  "StartupProjectFiles": [],
-  "CurrentStartupProject": null
-}! CDebugTargetsUserSettingsKey[]y ;ƒGLastIndexSymbolScanners3eec062c-1463-4780-a3cd-e651e09576e3-4b32c687-281c-4c6d-a2a1-3d874bfa2d4d-7b3bd5d3-8362-427d-89a4-742f2e2256c2-c62867cc-67a8-49c6-a9d0-2bef369d8bf7-d9212c5d-975a-49e6-a753-2f586bfbf077-dfc75919-8da2-4b4c-bd45-165d2bcf6f61 /IndexProcessCount8 'SchemaVersion1.3.5
-   İ óİ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 -FileSystemEntitypSetting
-   h hÙ½}ï                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    -CreatedOrUpdatedCProjectConfigurationServiceCDebugTargetsUserSettingsKey;LastIndexSymbolScanners/IndexProcessCount'	SchemaVersion
- bUìÙÃªhM3æÍ¶›ˆmR4
-û
-Ş
-–
-x
-Y
-?
-%
-óÜÅªqV7äÅ¥Œt[A'
-õ
-Ü
-Ã
-ª
-‘
-x
-_
-E
-*
-	ü	å	Î	³	˜	|	`	D	(	ïØÁª“|eN7 á¼“oXJG:»qU¡é'yUUUUUUU                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           l #	message.png
-ÛTûÁæK_k )	magnifying.png
-ÛTûÁæK_Û A	img_spritm 	backy.jpg
-ÛTûÁæK_i +	img_sprite1.png
-ÛTûÁæK_ 7	cun n 	ss3.jpg
-ÛTûÁæK_f !	cubic.jfif
-ÛTûÁæK_g A	bluo +	list_arrow2.png
-ÛTûÁæK_d +	blurycloud.jfif
-ÛTûÁæK_® =	bcblack3.jp cloudyÛTûÁæK_b '	bcblack3.jfif
-ÛTûÁæK_! S;	bcblack2.jpg.crdownload
-ÛSføöŞ#! +A	backblack2.avif.crdownload
-ÛSfÎñ‡0` %	bcblack2.jpg
-ÛTûÁæK_ç›Ğh )=	backblack.jpg.crdownload
-ÛSfOp\ '	backblack.jpg
-ÛTûÁæK_­ (;	cloudy3.jfif.crdownload
-ÛSfĞPZ %	cloudy3.jfif
-ÛTûÁæK_
-¼ TE	Unconfirmed 55271.crdownload
-ÛSeïk   '9	cloudy2.jpg.crdownload
-ÛSeÄM+¹V #	cloudy2.jpg
-ÛTûÁæK_U %	frontcl2.png
-ÛTûÁæK_h %	cloudysp.png
-ÛTûÁæK_ÏS 	nav.jsÛTûÁæK_"R 3	jquery.wmuSlider.jsÛTûÁæK_'Q =	jquery.magnific-popup.jsÛTûÁæK_#P 5	jquery.flexslider.jsÛTûÁæK_#O 5	jquery-1.11.1.min.jsÛTûÁæK_N 	tick1.png
-ÛTûÁæK_M 	t9.jpg
-ÛTûÁæK_L 	t8.jpg
-ÛTûÁæK_K 	t7.jpg
-ÛTûÁæK_J 	t6.jpg
-ÛTûÁæK_I 	t5.jpg
-ÛTûÁæK_H 	t4.jpg
-ÛTûÁæK_G 	t3.jpg
-ÛTûÁæK_F 	t2.jpg
-ÛTûÁæK_E 	t1.jpg
-ÛTûÁæK_D %	support1.jpg
-ÛTûÁæK_C #	support.jpg
-ÛTûÁæK_B #	single1.png
-ÛTûÁæK_A #	single1.jpg
-ÛTûÁæK_@ #	servers.png
-ÛTûÁæK_? #	server1.png
-ÛTûÁæK_> !	server.png
-ÛTûÁæK_= !	search.png
-ÛTûÁæK_< 	s4.jpg
-ÛTûÁæK_; 	s3.jpg
-ÛTûÁæK_: 	s2.jpg
-ÛTûÁæK_9 	s1.jpg
-ÛTûÁæK_8 !	quote1.png
-ÛTûÁæK_7 	quote.png
-ÛTûÁæK_6 	pic9.jpg
-ÛTûÁæK_5 	pic8.jpg
-ÛTûÁæK_4 	pic7.jpg
-ÛTûÁæK_3 	pic6.jpg
-ÛTûÁæK_2 	pic5.jpg
-ÛTûÁæK_1 	pic4.jpg
-ÛTûÁæK_0 	pic3.jpg
-ÛTûÁæK_/ 	pic2.jpg
-ÛTûÁæK_. 	pic11.jpg
-ÛTûÁæK_- 	pic10.jpg
-ÛTûÁæK_, 	pic1.jpg
-ÛTûÁæK_+ 	msg.png
-ÛTûÁæK_* 	logo.png
-ÛTûÁæK_) +	list_arrow1.png
-ÛTûÁæK_( )	list_arrow.png
-ÛTûÁæK_' )	img_sprite.png
-ÛTûÁæK_& 	icon.png
-ÛTûÁæK_% !	f_logo.png
-ÛTûÁæK_$ )	down_arrow.png
-ÛTûÁæK_# !	domain.jpg
-ÛTûÁæK_" #	comment.png
-ÛTûÁæK_! %	calender.png
-ÛTûÁæK_  !	banner.jpg
-ÛTûÁæK_ 	b3.jpg
-ÛTûÁæK_ 	b2.jpg
-ÛTûÁæK_ 	b1.jpg
-ÛTûÁæK_ !	arrows.png
-ÛTûÁæK_ 	style.css
-ÛTûÁæK_ 	popup.css
-ÛTûÁæK_ )	flexslider.css
-ÛTûÁæK_ '	bootstrap.css
-ÛTûÁæK_$ 7	w3layouts-License.txtÛTûÁæK_   "/	testimonials.htmlÛS‹éòå %	support.htmlÛTûÁæK_ #	single.htmlÛTûÁæK_ %	service.htmlÛTûÁæK_ '	register.htmlÛTûÁæK_ !	plans.htmlÛTûÁæK_ !	login.htmlÛTûÁæK_ jsÛTûÁæK_ !	index.htmlÛTûÁæK_
- imagesÛTûÁæK_ 	faq.htmlÛTûÁæK_ #	domain.htmlÛTûÁæK_
- cssÛTûÁæK_	 %	contact.htmlÛTûÁæK_ 	blog.htmlÛTûÁæK_ !	about.htmlÛTûÁæK_$ 7	VSWorkspaceState.jsonÛTûÁæK_ #cloudy-yuvaÛTûÁæK_  	README.mdÛTûÁæK_  cloudyÛTûÁæK_  .vsÛTûÁæK_  .gitÛTûÁæK_
-
-7 b	G
-/	Ã
-øíâ×
-œ	È
->	ü
-	Ë(·	S>	ì
-Ì	r§
-n	¬	
-^˜…e	ßtX	HE	^
-OÜÃ¦
-
-öâ
-½8Ï¿,ƒ²¤–‰|obUH;.
-®
-İ 	µ
-ı
-û
-ğ
-å
-Ö
-Ç
-·
-§
-ì.
-—
-‡	ƒ
-w
-f
-[
-P
-E
-:
-/
-$
-
-
-õ
-:®®®®®®®                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-Z 
- message.pngl
-‹ magnifying.pngk
-‹ .gits
-images
-cloudy+img_sprite1.pngi%cloudysp.pnghss3.jpgn
-backy.jpgm!cubic.jfiffcss
-y
-README.md.vs+blurycloud.jfifdfaq.html#cloudy-yuva'bcblack3.jfifbjs7VSWorkspaceState.json	.git bcb%bcblack2.jpg`!index.html#domain.html%contact.html	
-blog.html!about.html'backblack.jpg\!plans.html!login.html%cloudy3.jfifZ
-popup.cssm%service.html'register.html( 	cloud#cloudy2.jpgVT msg.png+logo.png*)img_sprite.png'icon.png&!f_logo.png%%frontcl2.pngU)down_arrow.png$!domain.jpg##comment.png"%calender.png!!banner.jpg 
-b3.jpg
-b2.jpg
-b1.jpg!arrows.png
-style.css)flexslider.css'bootstrap.css7w3layouts-License.txtI /t4.jpgH   æt3.jpgG   æt2.jpgF   æt1.jpgE   
-nav.jsS3jquery.wmuSlider.jsR=jquery.magnific-popup.jsQ5jquery.flexslider.jsP5jquery-1.11.1.min.jsO
-tick1.pngN
-t9.jpgM
-t8.jpgL
-t7.jpgK
-t6.jpgJ
-t5.jpgI
-t4.jpgH
-t3.jpgG
-t2.jpgF
-t1.jpgE%support1.jpgD#support.jpgC#single1.pngB#single1.jpgA#servers.png@#server1.png?!server.png>!search.png=
-s4.jpg<
-s3.jpg;
-s2.jpg:
-s1.jpg9!quote1.png8
-quote.png7pic9.jpg6pic8.jpg5pic7.jpg4pic6.jpg3pic5.jpg2pic4.jpg1pic3.jpg0pic2.jpg/
-pic11.jpg.
-pic10.jpg-pic1.jpg,#message.pngl)magnifying.pngk+list_arrow2.pngo+list_arrow1.png))list_arrow.png(%support.html#single.html
-cloudyp   ·nav.jsS   ¬jquery.wmuSlider.jsR   ”jquery.magnific-popup.jsQ   wjquery.flexslider.jsP   ^jquery-1.11.1.min.jsO   Etick1.pngN   7t9.jpgM   ,t8.jpgL   !t7.jpgK   t6.jpgJ   t5.jpgI
-
-Ë b
- ü÷òíçá
-¿ÛÕÏÉÃ½·±«¥Ÿ™“‡{uoic]WQKE?93-'!	ı÷ñëåßÙÓÍÇÁ»µ¯©£—‘‹…ysmga[UOIC=71
-ï
-ã
-×
-Å
-¹
-­
-
-¡
-•
-
-›
-§
-³+%                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-l
-k
-m
-i
-n
-f
-o
-dp
-b
-İ 
-a
-İ 
-_
-`
-é 
-]
-\
-õ 
-[
-Z 
-X   
-W
-V
-U
-hSRQPO
-N
-M
-L
-K
-J
-I
-H
-G
-F
-E
-D
-C
-B
-A
-@
-?
->
-=
-<
-;
-:
-9
-8
-7
-6
-5
-4
-3
-2
-1
-0
-/
-.
--
-,
-+
-*
-)
-(
-'
-&
-%
-$
-#
-"
-!
- 
-
-
-
-
-
-
-
-   
-
-	    	
-Ç bÄ	tù	µ	ö
-%
-ù	âÎ
-è	}	E	&	L
-Õ|	b
-o
-'
-Ã	¢ïŞ	
-²
-
-7
-Ÿ†îØ
-T$	êĞ	YÃ­—
-Cˆ
-÷
-å
-×Ã
-È
-¸
-¨
-™
-Š
-{
-l
-]
-N
-?
-0
-2'
- 
-	6r
-
-õè×Æ´¢_MîÜ	:Ê·“ªƒvi\O?	Æ`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            	¤ 
-p message.png
-l	p magnifying.png
-k	p img	^ 
-images
-	> cloudy		 img_sprite1.png
-iè cloudysp.png
-h× 		.gitc.j
-e babacky.jpg
-m!cubic.jfif
-f	css
- .vs
-ss3.jpg
-n+blurycloud.jfif
-dblog.html README.md'bcblack3.jfif
-bjs#cloudy-yuva 	.git%bcblack2.jpg
-`#domain.html%contact.html	!about.html7VSWorkspaceState.json'backblack.jpg
-\b1.jpg
-faq.html%cloudy3.jfif
-Zb2.jpg
-!plans.html!login.html!index.html 
-cloud#cloudy2.jpg
-Vs1.jpg
-9!f_logo.png
-%%frontcl2.png
-U!domain.jpg
-##comment.png
-"%calender.png
-!!banner.jpg
- b3.jpg
-!arrows.png
-style.css
-popup.css
-)flexslider.css
-'bootstrap.css
-7w3layouts-License.txt cloudylogo.png
-*+list_arrow2.png
-o+list_arrow1.png
-))list_arrow.png
-(+img_sprite1.png
-i)img_sprite.png
-'icon.png
-&)down_arrow.png
-$%cloudysp.png
-h%support.html#single.html%service.html'register.htmlimages
-t1.jpg
-E
-5#servers.png
-@#server1.png
-?!server.png
->!search.png
-=s4.jpg
-<s3.jpg
-;s2.jpg
-:!quote1.png
-8quote.png
-7pic9.jpg
-6pic8.jpg
-5pic7.jpg
-4pic6.jpg
-3pic5.jpg
-2pic4.jpg
-1pic3.jpg
-0pic2.jpg
-/pic11.jpg
-.pic10.jpg
--pic1.jpg
-,
-msg.png
-+#message.png
-l)magnifying.png
-kcloudyp   ªnav.jsS   ªjquery.wmuSlider.jsR   ªjquery.magnific-popup.jsQ   ªjquery.flexslider.jsP   ªjquery-1.11.1.min.jsO   ªtick1.png
-N   ªt9.jpg
-M   ªt8.jpg
-L   ªnav.jsS3jquery.wmuSlider.jsR=jquery.magnific-popup.jsQ5jquery.flexslider.jsP5jquery-1.11.1.min.jsOtick1.png
-Nt9.jpg
-Mt8.jpg
-Lt7.jpg
-Kt6.jpg
-Jt5.jpg
-It4.jpg
-Ht3.jpg
-Gt2.jpg
-F%support1.jpg
-D#support.jpg
-C#single1.png
-B#single1.jpg
-A
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-   
- 6äs¨K
-	‹ÛQ‘ùRJ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ±W-QindexSymbolDefinition_DefiningFileId_IndexSymbolDefinitionCREATE INDEX [SymbolDefinition_DefiningFileId_Index]
-    ON [SymbolDefinition] ([DefiningFileId])
-C-GindexSymbolDefinition_Name_IndexSymbolDefinitionCREATE INDEX [SymbolDefinition_Name_Index]
-    ON [SymbolDefinition] ([Name] COLLATE NOCASE)…=--Š-tableSymbolDefinitionSymbolDefinition
-CREATE TABLE [SymbolDefinition]
-(
-    [SymbolDefinitionId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    [ProviderId] INTEGER NOT NULL
-        REFERENCES [ProviderEntity]([ProviderId])
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [Name] NVARCHAR(255) NOT NULL COLLATE NOCASE,
-    [FullyQualifiedName] NVARCHAR(255) COLLATE NOCASE,
-    [Kind] INTEGER NOT NULL,
-    [Accessibility] INTEGER NOT NULL,
-    [DefiningFileId] INTEGER NOT NULL
-        REFERENCES [FileSystemEntity]([FileSystemEntityId]) 
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [LocationRow] INTEGER NOT NULL,
-    [LocationColumn] INTEGER NOT NULL
-)/_-_indexFileScannerCache_FileSystemEntityId_IndexFileScannerCacheCREATE INDEX [FileScannerCache_FileSystemEntityId_Index]
-    ON [FileScannerCache]([FileSystemEntityId])ƒU
---†]tableFileScannerCacheFileScannerCacheCREATE TABLE [FileScannerCache]
-(
-    [FileScannerCacheId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
-    [FileSystemEntityId] INTEGER NOT NULL REFERENCES [FileSystemEntity]([FileSystemEntityId])
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [ProviderId] INTEGER NOT NULL REFERENCES [ProviderEntity]([ProviderId])
-        ON DELETE CASCADE,
-    [Type] INTEGER NOT NULL,
-    [Timestamp] DATETIME NULL
-)-	/)‚indexProviderType_TypeProviderEntity
-CREATE UNIQUE INDEX [ProviderType_Type]
-    ON [ProviderEntity] ([ProviderType] COLLATE NOCASE,[ProviderVersion] COLLATE NOCASE)‚ ))ƒ;tableProviderEntityProviderEntity	CREATE TABLE [ProviderEntity]
-(
-    [ProviderId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    [ProviderType] NVARCHAR(20) NOT NULL COLLATE NOCASE,
-    [ProviderVersion] NVARCHAR(20) NOT NULL COLLATE NOCASE
-):E-‚indexFileSystemEntity_Parent_NameFileSystemEntityCREATE UNIQUE INDEX [FileSystemEntity_Parent_Name]
-    ON [FileSystemEntity] ([Name] COLLATE NOCASE, [ParentFileSystemEntityId])Bk-yindexFileSystemEntity_ParentFileSystemEntityId_IndexFileSystemEntityCREATE INDEX [FileSystemEntity_ParentFileSystemEntityId_Index]
-    ON [FileSystemEntity] ([ParentFileSystemEntityId])C-GindexFileSystemEntity_Name_IndexFileSystemEntityCREATE INDEX [FileSystemEntity_Name_Index]
-    ON [FileSystemEntity] ([Name] COLLATE NOCASE)ƒH--†CtableFileSystemEntityFileSystemEntityCREATE TABLE [FileSystemEntity]
-(
-    [FileSystemEntityId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    [Name] NVARCHAR(255) NOT NULL COLLATE NOCASE,
-    [ParentFileSystemEntityId] INTEGER NULL
-        REFERENCES [FileSystemEntity]([FileSystemEntityId])
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [IsFile] BIT NOT NULL,
-    [LastObserved] DATETIME NOT NULL DEFAULT current_timestamp
-)o1indexSetting_Name_IndexSettingCREATE INDEX [Setting_Name_Index]
-  ON [Setting] ([Name] COLLATE NOCASE)P++Ytablesqlite_sequencesqlite_sequenceCREATE TABLE sqlite_sequence(name,seq)G‚etableSettingSettingCREATE TABLE [Setting]
-(
-    [SettingId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    [Name] NVARCHAR(255) NOT NULL COLLATE NOCASE,
-    [Value] NVARCHAR(255) NULL
-)
-   
-  NöO1|ÇL¡                                                                                                                   †--‹WviewFullPathEntitiesFullPathEntitiesCREATE VIEW FullPathEntities as
-WITH RECURSIVE FullPathEntities AS(
-        SELECT FileSystemEntityId AS BaseSystemEntityId, ParentFileSystemEntityId AS CurrentParentEntityId, Name AS CurrentPath FROM FileSystemEntity
-        UNION
-        SELECT
-            P.BaseSystemEntityId,
-            FS.ParentFileSystemEntityId AS CurrentParentEntityId,
-            FS.Name || '\' || P.CurrentPath AS CurrentPath
-        FROM FullPathEntities AS P
-        INNER JOIN FileSystemEntity AS FS ON
-        FS.FileSystemEntityId = P.CurrentParentEntityId
-)
-SELECT FS.*,P.CurrentPath As FullPath
-FROM FullPathEntities AS P
-INNER JOIN FileSystemEntity AS FS ON FS.FileSystemEntityId = P.BaseSystemEntityId
-WHERE CurrentParentEntityId IS NULL([)YindexFileSystemData_FileSystemEntityId_IndexFileSystemDataCREATE INDEX [FileSystemData_FileSystemEntityId_Index]
-    ON [FileSystemData] ([FileSystemEntityId])„x))‰+tableFileSystemDataFileSystemDataCREATE TABLE [FileSystemData]
-(
-    [FileSystemDataId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    [FileSystemEntityId] INTEGER NOT NULL
-        REFERENCES [FileSystemEntity]([FileSystemEntityId]) 
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [ProviderId] INTEGER NOT NULL REFERENCES [ProviderEntity]([ProviderId])
-        ON DELETE CASCADE,
-    [Type] NVARCHAR(20) NOT NULL COLLATE NOCASE,
-    [Name] NVARCHAR(255) NOT NULL COLLATE NOCASE,
-    [Value] TEXT NULL,
-    [Target] NVARCHAR(255) NULL COLLATE NOCASE,
-    [Context] NVARCHAR(255) NULL COLLATE NOCASE
-)2_3_indexFileSystemReference_ReferenceFileId_IndexFileSystemReferenceCREATE INDEX [FileSystemReference_ReferenceFileId_Index]
-    ON [FileSystemReference]([ReferenceFileId])2_3_indexFileSystemReference_DependantFileId_IndexFileSystemReferenceCREATE INDEX [FileSystemReference_DependantFileId_Index]
-    ON [FileSystemReference]([DependantFileId])†33‹]tableFileSystemReferenceFileSystemReferenceCREATE TABLE [FileSystemReference]
-(
-    [FileSystemReferenceEntityId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
-    [ProviderId] INTEGER NOT NULL
-        REFERENCES [ProviderEntity]([ProviderId])
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [DependantFileId] INTEGER NOT NULL
-        REFERENCES [FileSystemEntity]([FileSystemEntityId])
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [ReferenceFileId] INTEGER NULL
-        REFERENCES [FileSystemEntity]([FileSystemEntityId])
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [ReferenceFilePath] TEXT NULL COLLATE NOCASE,
-    [Target] NVARCHAR(255) NULL COLLATE NOCASE,
-    [Context] NVARCHAR(255) NULL COLLATE NOCASE,
-    [Type] INTEGER NULL
-)$W-QindexSymbolDefinition_DefiningFileId_IndexSymbolDefinitionCREATE INDEX [SymbolDefinition_DefiningFileId_Index]
-    ON [SymbolDefinition] ([DefiningFileId])
-C-GindexSymbolDefinition_Name_IndexSymbolDefinitionCREATE INDEX [SymbolDefinition_Name_Index]
-    ON [SymbolDefinition] ([Name] COLLATE NOCASE)…=--Š-tableSymbolDefinitionSymbolDefinition
-CREATE TABLE [SymbolDefinition]
-(
-    [SymbolDefinitionId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    [ProviderId] INTEGER NOT NULL
-        REFERENCES [ProviderEntity]([ProviderId])
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [Name] NVARCHAR(255) NOT NULL COLLATE NOCASE,
-    [FullyQualifiedName] NVARCHAR(255) COLLATE NOCASE,
-    [Kind] INTEGER NOT NULL,
-    [Accessibility] INTEGER NOT NULL,
-    [DefiningFileId] INTEGER NOT NULL
-        REFERENCES [FileSystemEntity]([FileSystemEntityId]) 
-        ON UPDATE CASCADE
-        ON DELETE CASCADE,
-    [LocationRow] INTEGER NOT NULL,
-    [LocationColumn] INTEGER NOT NULL
-)/_-_indexFileScannerCache_FileSystemEntityId_IndexFileScannerCacheCREATE INDEX [FileScannerCache_FileSystemEntityId_Index]
-    ON [FileScannerCache]([FileSystemEntityId])
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
