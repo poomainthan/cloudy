@@ -321,7 +321,7 @@ ul{
    width: 32px;
    height: 32px;
    display: inline-block;
-   background: url(../images/img_sprite1.png)no-repeat -316px -81px;
+   background: url(../images/img_sprite1.png) no-repeat -316px -81px;
 }
 .payment{
 	width: 35px;
