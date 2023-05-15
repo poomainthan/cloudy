@@ -337,7 +337,7 @@ ul{
 	margin: 2em 0 2em;
 }
 .payment-sendbtns input[type="reset"]{
-	background:#ff8261;
+	background:#555;
 	padding:10px 20px;
 	border: none;
 	color: #FFF;
@@ -356,7 +356,7 @@ ul{
 	background:#52cbf8;
 }
 .payment-sendbtns input[type="submit"]{
-	background:#52cbf8;
+	background:#555;
 	padding:10px 20px;
 	border: none;
 	color: #fff;
@@ -371,7 +371,7 @@ ul{
 	font-weight: 400;
 }
 .payment-sendbtns input[type="submit"]:hover{
-   background:#ff8261;
+   background:#52cbf8;
 }
 .payment-sendbtns li{
 	display:inline-block;
@@ -412,22 +412,22 @@ input[type=checkbox].css-checkbox2 + label.css-label2 {
     background-repeat: no-repeat;
     background-position: -20px 0px;
     cursor: pointer;
-    background: url(../images/img_sprite.png) no-repeat -419px -83px;
+    background: url(../images/img_sprite1.png) no-repeat -419px -83px;
 }
 input[type=checkbox].css-checkbox2:checked + label.css-label2 {
-	background: url(../images/img_sprite.png) no-repeat -239px -209px;
+	background: url(../images/img_sprite1.png) no-repeat -239px -209px;
 }
 .visa{
 	display: inline-block;
     width: 32px;
     height: 32px;
-    background: url(../images/img_sprite.png) no-repeat -234px -82px;
+    background: url(../images/img_sprite1.png) no-repeat -234px -82px;
 }
 .paypal{
 	display: inline-block;
     width: 32px;
     height: 32px;
-    background: url(../images/img_sprite.png) no-repeat -275px -82px;
+    background: url(../images/img_sprite1.png) no-repeat -275px -82px;
 }
 .payment-online-form-right{
 	float: right;
