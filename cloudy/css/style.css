@@ -7,11 +7,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
-p {margin: 0;}
+p {margin: 20;}
 html, body{
   	font-family: 'Open Sans', sans-serif;
     font-size: 100%;
-  	background: #FFf;
+  	background: #fff;
 }
 body a{
 	transition:0.5s all;
@@ -1235,12 +1235,12 @@ h2.charge_head:after {
   top: 20px;
 }
 ul.list_3{
-	padding:0;
-	margin:0;
+	padding:10px 0 0 0;
+	margin:8em auto auto auto;
 	list-style:none;
 }
 ul.list_3 li {
-	border-bottom: 1px solid #D7E8ED;
+	border-bottom: 1px solid #000;
 	display: inline;
 	float: left;
 	padding: 10px 0;

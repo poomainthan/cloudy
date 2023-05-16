@@ -64,12 +64,13 @@ h1 {
   font-size: 2em;
 }
 mark {
-  color: #000;
-  background: #ff0;
+  color: #52cbf8;
+  background: #52cbf8;
 }
 small {
   font-size: 80%;
 }
+
 sub,
 sup {
   position: relative;
