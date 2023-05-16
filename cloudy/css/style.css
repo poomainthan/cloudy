@@ -438,7 +438,7 @@ i.s6{
   height: 2px;
   margin-left: -10px;
   left:1%;
-  background:#ff8261;
+  background:#555;
   content: '';
   top: 20px;
 }
@@ -1558,7 +1558,7 @@ h5.m_26{
 }
 h5.m_26 a {
   color: #fff;
-  background: #ff8261;
+  background: #555;
   font-size: 0.85em;
   text-transform: uppercase;
   font-weight: 600;
@@ -1685,7 +1685,7 @@ span.m_21 {
   height: 2px;
   margin-left: -10px;
   left:4%;
-  background: #ff8261;
+  background: #555;
   content: '';
   top: 20px;
 }
