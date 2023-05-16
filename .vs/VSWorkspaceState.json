@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\cloudy",
-    "\\cloudy\\images"
+    "\\cloudy\\css",
+    "\\cloudy\\js"
   ],
-  "SelectedNode": "\\cloudy\\faq.html",
+  "SelectedNode": "\\cloudy\\css\\popup.css",
   "PreviewInSolutionExplorer": false
 }
