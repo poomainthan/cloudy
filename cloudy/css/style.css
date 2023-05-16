@@ -592,9 +592,9 @@ span.m_7{
 	-ms-transition:0.5s all;
 	padding: 1em 2em 1.5em;
 }
-.pricing-table-grid:hover{
-	border-color:#DBD334;
-}
+	.pricing-table-grid:hover {
+		border-color: #a94442;
+	}
 .pricing-table-grid:hover a,.pricing-table-grid:hover span{
 	border-color:#DBD334;
 }
@@ -625,14 +625,90 @@ a.order-btn{
   background: #555;
   font-size: 13px;
   font-weight: 600;
-  width: 55%;
-  margin: 2em auto auto auto;
+  width: 200%;
+  margin: 6em auto auto auto;
   border:none;
   outline:none;
 }
 a.order-btn:hover{
 	color:#ffe13e;
 }
+a.process-btn {
+	color: #fff;
+	padding: 13px 20px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #555;
+	font-size: 13px;
+	font-weight: 600;
+	width: 100%;
+	margin: 2em auto auto auto;
+	border: none;
+	outline: none;
+}
+
+a.process-btn:hover {
+	color: #ffe13e;
+}
+a.process2-btn {
+	color: #fff;
+	padding: 13px 20px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #555;
+	font-size: 13px;
+	font-weight: 600;
+	width: 100%;
+	margin: 1em auto auto auto;
+	border: none;
+	outline: none;
+}
+
+a.process2-btn:hover {
+		color: #ffe13e;
+	}
+a.process3-btn {
+	color: #fff;
+	padding: 13px 20px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #555;
+	font-size: 13px;
+	font-weight: 600;
+	width: 100%;
+	margin: 2em auto auto auto;
+	border: none;
+	outline: none;
+}
+
+	a.process3-btn:hover {
+		color: #ffe13e;
+	}
+a.process4-btn {
+	color: #fff;
+	padding: 13px 20px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #555;
+	font-size: 13px;
+	font-weight: 600;
+	width: 100%;
+	margin: 2em auto auto auto;
+	border: none;
+	outline: none;
+}
+
+	a.process4-btn:hover {
+		color: #ffe13e;
+	}
 .pricing-table-grid:hover a.order-btn{
 	background:#52cbf8;
 }
@@ -1594,7 +1670,7 @@ span.m_14{
   height: 2px;
   margin-left: -10px;
   left:1%;
-  background: #ff8261;
+  background: #555;
   content: '';
   top:20px;
 }
@@ -1626,7 +1702,7 @@ ul.list_4 li a{
 }  
 ul.list_4 li a:hover{
 	text-decoration:none;
-	color:#ff8261;
+	color:#555;
 }
 .but3{
    padding: 12px 30px;
@@ -1798,7 +1874,7 @@ span.m_25{
 }
 .login-right input[type="text"] {
 	border: 1px solid #EEE;
-	outline-color:#fb4d01;
+	outline-color:#555;
 	width:100%;
 	font-size:0.8125em;
 	padding:10px;
@@ -1997,7 +2073,7 @@ p.m_8 {
   margin-bottom: 2em;
 }
 .price, .about_grid, .about_grid1 {
-  padding: 5em 0;
+  padding: 2em 0;
 }
 .but2 {
   font-size: 0.8125em;
@@ -2521,4 +2597,27 @@ li.middle {
 .one-fifth {
   width: 61.4%;
 }
+}
+
+
+.payment-sendbtns {
+	color: #52cbf8;
+	padding: 13px 20px;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: none;
+	font-size: 13px;
+	font-weight: 600;
+	width: 55%;
+	margin: 2em auto auto auto;
+	border: none;
+	outline: none;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	box-sizing:border-box;
 }
