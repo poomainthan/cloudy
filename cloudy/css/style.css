@@ -709,9 +709,7 @@ a.process4-btn {
 	a.process4-btn:hover {
 		color: #ffe13e;
 	}
-.pricing-table-grid:hover a.order-btn{
-	background:#52cbf8;
-}
+
 span.month{
 	font-size:15px;
 	font-weight:300;
